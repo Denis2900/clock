@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.clock{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url('../../images/clock.png');
+    background-size: 100% 99%;
+    position: relative;
+    border: 2px solid blue;
+}
+.hours_arrow,.minutes_arrow,.seconds_arrow{
+    position: absolute;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: auto;
+}
+.hours_arrow{
+    width: 5px;
+    height: 300px;
+}
+.minutes_arrow{
+    width: 2px;
+}
+.seconds_arrow{
+    width: 1px;
+}
+.first_part{
+    height: 50%;
+    width: 100%;
+    background: black;
+}
+.second_part{
+    height: 50%;
+    width: 100%;
+    background: transparent;
+}
+@media(max-width:500px){
+    .clock{
+        width: 300px;
+        height:300px;
+    }
+    .minutes_arrow,.seconds_arrow,.hours_arrow{
+        height: 200px;
+    }
+    .first_part,.second_part{
+        height: 50%;
+    }
+}
+@media(max-width:300px){
+    .clock{
+        width: 200px;
+        height:200px;
+    }
+    .minutes_arrow,.seconds_arrow,.hours_arrow{
+        height: 100px;
+    }
+    .first_part,.second_part{
+        height: 50%;
+    }
+}
